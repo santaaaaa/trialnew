@@ -49,7 +49,7 @@ def makegseQuery(req):
     if sweat is None:
         return None
     
-    return "sweat"
+    return "('" + sweat + "')"
 
 
 def makeWebhookResult(data):
