@@ -4,6 +4,6 @@
   "repository": "https://github.com/santaaaaa/trialnew",
   "logo": "http://whatdx.com/logo.png",
   "keywords": ["custom search", "api.ai", "trial"]
- 
+  "url": "heroku/python"
 }
 
