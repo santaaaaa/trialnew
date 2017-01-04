@@ -1,0 +1,7 @@
+{
+  "name": "gse-trial",
+  "description": "An API service to connect api.ai with gsc",
+  "repository": "https://github.com/santaaaaa/trialnew",
+  "logo": "http://whatdx.com/logo.png",
+  "keywords": ["custom search", "api.ai", "trial"]
+}
