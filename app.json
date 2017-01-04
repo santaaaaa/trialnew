@@ -4,8 +4,6 @@
   "repository": "https://github.com/santaaaaa/trialnew",
   "logo": "http://whatdx.com/logo.png",
   "keywords": ["custom search", "api.ai", "trial"]
-}
-{
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python.git"
@@ -15,3 +13,4 @@
     }
   ]
 }
+
