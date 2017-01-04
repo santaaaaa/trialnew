@@ -35,7 +35,7 @@ def processRequest(req):
     gse_query = makegseQuery(req)
     if gse_query is None:
         return {}
-    gse_url = baseurl + urllib.urlencode({'q': gse_query}) + "cx=004041591984903320296:4qlxcgnnbvs&num=1&key=AIzaSyCbVAZvrSARaerACN-s0VeIybozDaP6Zg8"
+    gse_url = baseurl + urllib.urlencode({'q': gse_query}) + "&cx=004041591984903320296:4qlxcgnnbvs&num=1&key=AIzaSyCbVAZvrSARaerACN-s0VeIybozDaP6Zg8"
     result = urllib.urlopen(gse_url).read()
     data = json.loads(result)
     res = makeWebhookResult(data)
