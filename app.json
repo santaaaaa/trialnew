@@ -1,6 +1,6 @@
 {
   "name": "gse-trial",
-  "description": "An API service to connect api.ai with gsc",
+  "description": "An API service to connect api.ai with gsc via heroku",
   "repository": "https://github.com/santaaaaa/trialnew",
   "logo": "http://whatdx.com/logo.png",
   "keywords": ["custom search", "api.ai", "trial"]
