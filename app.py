@@ -48,8 +48,8 @@ def makegseQuery(req):
     sweat = parameters.get("sweat")
     if sweat is None:
         return None
-
     
+    return "sweat"
 
 
 def makeWebhookResult(data):
