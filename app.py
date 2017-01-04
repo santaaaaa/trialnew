@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#!/usr/bin/env python
 
 import urllib
 import json
@@ -49,7 +50,7 @@ def makegseQuery(req):
     if sweat is None:
         return None
 
- 
+    
 
 
 def makeWebhookResult(data):
@@ -64,17 +65,21 @@ def makeWebhookResult(data):
     snippet = items.get('snippet')
     if snippet is None:
         return {}
-    
+        
     link = items.get('link')
     if link is none:
+        return {}    
+
+    item = channel.get('item')
+    location = channel.get('location')
+    units = channel.get('units')
+    if (location is None) or (item is None) or (units is None):
         return {}
 
-   
 
     # print(json.dumps(item, indent=4))
 
-    speech = "I have found this" + ": " + snippet + "from" + link
-             
+    speech = "I have found this" + ": " + 'snippet' + "from" + 'link'
 
     print("Response:")
     print(speech)
@@ -84,14 +89,10 @@ def makeWebhookResult(data):
         "displayText": speech,
         # "data": data,
         # "contextOut": [],
-        "source": "gse-trial-sample"
+        "source": "apiai-python-webhook"
     }
 
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 5000))
-
-    print "Starting app on port %d" % port
-
-    app.run(debug=False, port=port, host='0.0.0.0')
-
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, port=port)
