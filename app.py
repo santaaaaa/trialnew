@@ -78,11 +78,16 @@ def makeWebhookResult(data):
     print(speech)
 
     return {
+        Headers:
+        Content-type: application/json
+        
+        Body:
+{
         "speech": speech,
         "displayText": speech,
         # "data": data,
         "contextOut": [{"name":"gen", "lifespan":1}],
-        "source": "apiai-python-webhook"
+        "source": "apiai-python-webhook"}
     }
 
 
