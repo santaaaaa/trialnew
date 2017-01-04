@@ -1,18 +1,14 @@
 {
-  "name": "gse-trial",
-  "description": "An API service to connect api.ai with gsc via heroku",
-  "repository": "https://github.com/santaaaaa/trialnew",
-  "logo": "http://whatdx.com/logo.png",
-  "keywords": ["custom search", "api.ai", "trial"],
+	"name": "gse-trial",
+	"description": "An API service to connect api.ai with gsc via heroku",
+	"repository": "https://github.com/santaaaaa/trialnew",
+	"logo": "http://whatdx.com/logo.png",
+	"keywords": ["custom search", "api.ai", "trial"],
+	"buildpacks": [{
+		"url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+	}, {
+		"url": "heroku/ruby"
+	}]
 }
-{
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
-    },
-    {
-      "url": "heroku/ruby"
-    }
-  ]
-}
+
 
